@@ -1,0 +1,15 @@
+.spin-left {
+  border: 1px solid;
+  width: 13%;
+  height: 200px;
+  background-color: pink;
+  font-size: 50px;
+}
+
+.spin-left:hover {
+  animation: spinn 3s linear infinite;
+}
+
+
+
+@keyframes spinn {100% {transform: rotate(-360deg)}};

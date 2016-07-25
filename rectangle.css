@@ -1,0 +1,100 @@
+#rectangle-container {
+  width: 77%;
+  height: 200px;
+  position: relative;
+  perspective: 8000px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes rectanglerotation {from,to { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) }
+0% { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg)}
+100% { transform: rotateX(460deg) rotateY(460deg) rotateZ(460deg); }
+}
+
+
+#parent-rectangle-div:hover {
+  animation: rectanglerotation linear infinite 7s;
+  transform-style: preserve-3d;
+  transform-origin: 120px 120px 0;
+}
+
+#parent-rectangle-div {
+  position: absolute;
+  transform-style: preserve-3d;
+  width: 400px;
+  height: 400px;
+}
+
+#parent-rectangle-div div {
+  margin: 0;
+  display: block;
+  position: absolute;
+  border: 2px solid black;
+  background: rgba(255,255,255,0.8);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+
+#parent-rectangle-div:hover > .rect-one {
+  transform: translateZ(-150px)
+}
+
+#parent-rectangle-div:hover > .rect-two {
+  transform: translateZ(150px)
+}
+
+#parent-rectangle-div:hover > .rect-three {
+  transform: rotateY(  90deg ) translateZ( 225px );
+}
+
+#parent-rectangle-div:hover > .rect-four {
+  transform: rotateY(  90deg ) translateZ(-225px);
+}
+
+#parent-rectangle-div:hover > .rect-five {
+  transform: rotateX(  90deg ) translateZ(160px);
+}
+
+#parent-rectangle-div:hover > .rect-six {
+  transform: rotateX(  -90deg ) translateZ(160px);
+}
+
+.rect-one {
+  width: 296px;
+  height: 196px;
+  transform: rotateY(   0deg ) translateZ(  50px );
+  background-color:
+}
+.rect-two {
+  width: 300px;
+  height: 197px;
+  transform: rotateX( 180deg ) translateZ(  50px );
+}
+
+.rect-three {
+  width: 96px;
+  height: 196px;
+  left: 100px;
+  transform: rotateY(  90deg ) translateZ( 150px );
+}
+.rect-four {
+  width: 96px;
+  height: 196px;
+  left: 100px;
+  transform: rotateY( -90deg ) translateZ( 150px );
+}
+
+
+.rect-five {
+  width: 296px;
+  height: 96px;
+  top: 50px;
+  transform: rotateX(  90deg ) translateZ( 100px );
+}
+
+.rect-six {
+  width: 296px;
+  height: 96px;
+  top: 50px;
+  transform: rotateX( -90deg ) translateZ( 100px );
+}

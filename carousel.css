@@ -1,0 +1,71 @@
+#carousel-container {
+  padding-left: 180px;
+  height: 160px;
+  perspective: 1300px;
+  width: 46%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 260px;
+}
+
+#parent-carousel-div:hover {
+  transform-origin: 180px 0 0;
+  animation: rotation 5s linear infinite;
+  transform-style: preserve-3d;
+}
+
+
+.first {
+  transform: rotateY(0deg) translateX(180px);
+  padding: 0 0 0 160px;
+  border: 4px solid purple;
+  width: 200px;
+  height: 160px;
+  position: absolute;
+}
+.second {
+  transform: rotateY(-60deg) translateX(180px);
+  padding: 0 0 0 147px;
+  border: 4px solid purple;
+  width: 213px;
+  height: 160px;
+  position: absolute;
+
+}
+.third {
+  transform: rotateY(-120deg) translateX(180px);
+  padding: 0 0 0 120px;
+  border: 4px solid purple;
+  width: 240px;
+  height: 160px;
+  position: absolute;
+
+}
+.fourth {
+  transform: rotateY(-180deg) translateX(180px);
+  padding: 0 0 0 147px;
+  border: 4px solid purple;
+  width: 210px;
+  height: 160px;
+  position: absolute;
+
+}
+.fifth {
+  transform: rotateY(-240deg) translateX(180px);
+  padding: 0 0 0 160px;
+  border: 4px solid purple;
+  width: 200px;
+  height: 160px;
+  position: absolute;
+
+}
+.sixth {
+  transform: rotateY(-300deg) translateX(180px);
+  padding: 0 0 0 160px;
+  border: 4px solid purple;
+  width: 200px;
+  height: 160px;
+  position: absolute;
+}
+
+@keyframes rotation {from { transform: rotateY(0deg); } to {transform: rotateY(-360deg);}}

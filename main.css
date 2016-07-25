@@ -1,0 +1,108 @@
+h2, figure {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 150px;
+  font-size: 60px;
+}
+
+#main-header {
+  font-size: 100px;
+  /*font-weight: bold;*/
+  margin-bottom: 100px;
+  text-align: center;
+  font-family: "Pacifico";
+  letter-spacing: 10px;
+}
+html {
+  height: 5000px;
+  width: 100%;
+  margin-right: 0;
+  margin-left: auto;
+  background: linear-gradient(to bottom, #1fddff 0%, #ff4b1f 100%);
+  background-repeat: no-repeat;
+  /*opacity: 0.5;*/
+}
+
+.parent-spin-div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+#parent-flip-div {
+  position: relative;
+  perspective: 800px;
+  width: 13%;
+}
+
+#card-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 450px;
+}
+
+#a-scroll-tag {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 200px;
+  color: pink;
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
+.a-card-spin {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 100px;
+}
+
+.a-card-flip {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 100px;
+      /*border-radius: 45%;*/
+}
+
+.a-carousel-fan {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 100px;
+      /*border-radius: 45%;*/
+}
+
+.a-carousel-spin {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 100px;
+      /*border-radius: 45%;*/
+}
+
+.a-cube {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 100px;
+      /*border-radius: 45%;*/
+}
+
+.a-rect {
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 40px;
+  margin-bottom: 100px;
+      /*border-radius: 45%;*/
+}
+
+.back-to-top {
+  text-align: center;
+  border: 3px solid crimson;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+}

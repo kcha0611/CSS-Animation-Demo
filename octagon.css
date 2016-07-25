@@ -1,0 +1,104 @@
+#octagon-container {
+  width: 80%;
+  height: 140px;
+  perspective: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 320px;
+}
+
+#parent-octagon-div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+#parent-octagon-div:hover {
+  animation: oct-rotate 30s linear infinite;
+  transform-origin: 110px 0 0;
+}
+
+#parent-octagon-div figure {
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 86px;
+  border: 2px solid purple;
+}
+
+.oct-one {
+  transform: rotateY(0deg) translateZ(450px)
+}
+
+.oct-two {
+  transform: rotateY(20deg) translateZ(450px)
+}
+.oct-three {
+  transform: rotateY(40deg) translateZ(450px)
+}
+
+.oct-four {
+  transform: rotateY(60deg) translateZ(450px)
+}
+
+.oct-five {
+  transform: rotateY(80deg) translateZ(450px)
+}
+
+.oct-six {
+  transform: rotateY(100deg) translateZ(450px)
+}
+
+.oct-seven {
+  transform: rotateY(120deg) translateZ(450px)
+}
+
+.oct-eight {
+  transform: rotateY(140deg) translateZ(450px)
+}
+
+.oct-nine {
+  transform: rotateY(160deg) translateZ(450px)
+}
+
+.oct-ten {
+  transform: rotateY(180deg) translateZ(450px)
+}
+
+.oct-eleven {
+  transform: rotateY(200deg) translateZ(450px)
+}
+
+.oct-twelve {
+  transform: rotateY(220deg) translateZ(450px)
+}
+
+.oct-thirteen {
+  transform: rotateY(240deg) translateZ(450px)
+}
+
+.oct-fourteen {
+  transform: rotateY(260deg) translateZ(450px)
+}
+
+.oct-fifteen {
+  transform: rotateY(260deg) translateZ(450px)
+}
+
+.oct-sixteen {
+  transform: rotateY(300deg) translateZ(450px)
+}
+
+.oct-seventeen {
+  transform: rotateY(320deg) translateZ(450px)
+}
+
+.oct-eighteen {
+  transform: rotateY(340deg) translateZ(450px)
+}
+
+
+
+@keyframes oct-rotate {from { transform: rotateY(0deg); } to {transform: rotateY(360deg);}}

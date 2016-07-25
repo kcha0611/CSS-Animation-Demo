@@ -1,0 +1,14 @@
+.spin-right {
+border: 1px solid;
+width: 13%;
+height: 200px;
+background: #F11712;
+font-size: 50px;
+margin-bottom: 50px;
+}
+
+.spin-right:hover {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin { 100% { transform: rotate(360deg)}};

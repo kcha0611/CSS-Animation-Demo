@@ -1,0 +1,47 @@
+.flip-front {
+  border: 1px solid;
+  width: 250px;
+  height: 250px;
+  font-size: 50px;
+}
+
+#parent-flip-div figure {
+  margin: 0;
+  /*display: block;*/
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+#parent-flip-div .flip-front {
+  background-color: green;
+}
+
+#parent-flip-div .flip-back {
+  background-color: blue;
+  transform: rotateY(180deg)
+
+}
+
+#parent-flip-div:hover {
+  transform: rotateY( 180deg );
+ transform: translateX( -100% ) rotateY( -180deg );
+}
+
+#parent-flip-div {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1.5s;
+  transform-origin: right center;
+}
+
+.flip-back {
+  border: 1px solid;
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  font-size: 50px;
+}
