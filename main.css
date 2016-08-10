@@ -53,14 +53,14 @@ html {
 
 .a-card-spin {
   border: 3px solid;
-  padding: 10px;
+  padding: 25px;
   border-radius: 40px;
   margin-bottom: 100px;
 }
 
 .a-card-flip {
   border: 3px solid;
-  padding: 10px;
+  padding: 25px;
   border-radius: 40px;
   margin-bottom: 100px;
       /*border-radius: 45%;*/
@@ -68,7 +68,7 @@ html {
 
 .a-carousel-fan {
   border: 3px solid;
-  padding: 10px;
+  padding: 25px;
   border-radius: 40px;
   margin-bottom: 100px;
       /*border-radius: 45%;*/
@@ -76,7 +76,7 @@ html {
 
 .a-carousel-spin {
   border: 3px solid;
-  padding: 10px;
+  padding: 25px;
   border-radius: 40px;
   margin-bottom: 100px;
       /*border-radius: 45%;*/
@@ -84,7 +84,7 @@ html {
 
 .a-cube {
   border: 3px solid;
-  padding: 10px;
+  padding: 25px;
   border-radius: 40px;
   margin-bottom: 100px;
       /*border-radius: 45%;*/
@@ -92,7 +92,7 @@ html {
 
 .a-rect {
   border: 3px solid;
-  padding: 10px;
+  padding: 25px;
   border-radius: 40px;
   margin-bottom: 100px;
       /*border-radius: 45%;*/
