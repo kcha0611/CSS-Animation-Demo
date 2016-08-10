@@ -9,10 +9,11 @@
 }
 
 #parent-octagon-div {
-  width: 100%;
+  width: 70%;
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
+  margin-left: 40%;
 }
 
 #parent-octagon-div:hover {
