@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 300px;
+  margin-left: 2.5%;
 }
 
 @keyframes cuberotation {from,to { transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) }
