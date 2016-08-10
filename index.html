@@ -18,6 +18,7 @@
     <body>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <div id="main-header"></div>
+      <h2>Hover Over the Shapes to See Awesome Effects!</h2>
       <script>
       // debugger
         var delayText = function (target, message, index, interval) {
@@ -31,24 +32,28 @@
           delayText("#main-header", "CSS Animation Demo", 0, 300)
         })
       </script>
+
+
     <div id="a-scroll-tag">
-      <a href="#card-spins" class="a-card-spin" style="text-decoration:none; color: #F56217">Card Spins</a>
-      <a href="#card-flips" class="a-card-flip" style="text-decoration:none; color: #DA22FF">Card Flips</a>
-      <a href="#carousel-fan" class="a-carousel-fan" style="text-decoration:none; color: blue">Carousel Fan</a>
-      <a href="#carousel-spin" class="a-carousel-spin" style="text-decoration:none; color: purple">Carousel Spin</a>
-      <a href="#cube-rotations" class="a-cube" style="text-decoration:none; color: red">Cube Rotations</a>
-      <a href="#rectangle-trans" class="a-rect" style="text-decoration:none; color: brown">Rectangle Z-Transformation</a>
+      <a id="card-spins" href="#" class="a-card-spin" style="text-decoration:none; color: #F56217">Card Spins</a>
+      <a id="card-flips" href="#" class="a-card-flip" style="text-decoration:none; color: #DA22FF">Card Flips</a>
+      <a id="carousel-fan" href="#" class="a-carousel-fan" style="text-decoration:none; color: blue">Carousel Fan</a>
+      <a id="carousel-spin" href="#" class="a-carousel-spin" style="text-decoration:none; color: purple">Carousel Spin</a>
+      <a id="cube-rotations"  href="#"class="a-cube" style="text-decoration:none; color: red">Cube Rotations</a>
+      <a id="rectangle-trans" href="#" class="a-rect" style="text-decoration:none; color: brown">Rectangle Z-Transformation</a>
     </div>
+
+
       <a name="card-spins"/>
       <h2>Card Spins</h2>
-      <a href="#top" class="back-to-top" style="text-decoration: none">Back to Top</a>
+      <a id="top1" href="#" class="back-to-top" style="text-decoration: none"></a>
       <div class="parent-spin-div">
         <figure class="spin-right"><p class="spin-right-p">Spin Right</p></figure>
         <figure class="spin-left"><p class="spin-left-p">Spin Left</p></figure>
       </div>
       <a name="card-flips"/>
       <h2>Card Flips</h2>
-      <a href="#top" class="back-to-top" style="text-decoration: none">Back to Top</a>
+      <a id="top2" href="#" class="back-to-top" style="text-decoration: none"></a>
       <div id="card-container">
         <div id="parent-flip-div">
           <figure class="flip-front">Front</figure>
@@ -56,8 +61,8 @@
         </div>
       </div>
       <a name="carousel-fan"></a>
-      <h2>Carousel Spin</h2>
-      <a href="#top" class="back-to-top" style="text-decoration: none">Back to Top</a>
+      <h2>Carousel Fan</h2>
+      <a id="top3" href="#" class="back-to-top" style="text-decoration: none"></a>
       <div id="carousel-container">
         <div id="parent-carousel-div">
           <p class="first" alt="">1</p>
@@ -70,7 +75,7 @@
       </div>
       <a name="cube-rotations"></a>
       <h2>Cube Rotations</h2>
-      <a href="#top" class="back-to-top" style="text-decoration: none">Back to Top</a>
+      <a id="top4" href="#" class="back-to-top" style="text-decoration: none"></a>
       <div id="cube-container">
         <div id="parent-cube-div">
           <div class="one" alt=""></div>
@@ -82,8 +87,8 @@
         </div>
       </div>
       <a name="carousel-spin"></a>
-      <h2>Carousel Fan</h2>
-      <a href="#top" class="back-to-top" style="text-decoration: none">Back to Top</a>
+      <h2>Carousel Spin</h2>
+      <a id="top5" href="#" class="back-to-top" style="text-decoration: none"></a>
       <div id="octagon-container">
         <div id="parent-octagon-div">
           <figure alt="" class="oct-one">1</figure>
@@ -108,7 +113,7 @@
       </div>
       <a name="rectangle-trans"></a>
       <h2>Rectangle Z-Transformation</h2>
-      <a href="#top" class="back-to-top" style="text-decoration: none">Back to Top</a>
+      <a id="top6" href="#" class="back-to-top" style="text-decoration: none"></a>
       <div id="rectangle-container">
         <div id="parent-rectangle-div">
           <div class="rect-one" alt=""></div>
@@ -119,5 +124,48 @@
           <div class="rect-six" alt=""></div>
       </div>
     </div>
+    <script>
+      function scrollToAnchor(aid){
+          var aTag = $("a[name='"+ aid +"']");
+          $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+      }
+
+      $("#card-spins").click(function() {
+         scrollToAnchor('card-spins');
+      });
+      $("#card-flips").click(function() {
+         scrollToAnchor('card-flips');
+      });
+      $("#carousel-fan").click(function() {
+         scrollToAnchor('carousel-fan');
+      });
+      $("#carousel-spin").click(function() {
+         scrollToAnchor('carousel-spin');
+      });
+      $("#cube-rotations").click(function() {
+         scrollToAnchor('cube-rotations');
+      });
+      $("#rectangle-trans").click(function() {
+         scrollToAnchor('rectangle-trans');
+      });
+      $('#top1').click(function() {
+        scrollToAnchor('top');
+      })
+      $('#top2').click(function() {
+        scrollToAnchor('top');
+      })
+      $('#top3').click(function() {
+        scrollToAnchor('top');
+      })
+      $('#top4').click(function() {
+        scrollToAnchor('top');
+      })
+      $('#top5').click(function() {
+        scrollToAnchor('top');
+      })
+      $('#top6').click(function() {
+        scrollToAnchor('top');
+      })
+    </script>
   </body>
 </html>
