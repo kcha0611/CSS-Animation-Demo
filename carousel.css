@@ -1,71 +1,79 @@
 #carousel-container {
   padding-left: 180px;
   height: 160px;
-  perspective: 1300px;
+  perspective: 1000px;
   width: 46%;
   display: flex;
   justify-content: center;
   margin-bottom: 260px;
 }
 
-#parent-carousel-div:hover {
+#parent-carousel-div {
   transform-origin: 180px 0 0;
   animation: rotation 5s linear infinite;
   transform-style: preserve-3d;
 }
 
 
+
+
 .first {
   transform: rotateY(0deg) translateX(180px);
   padding: 0 0 0 160px;
-  border: 4px solid purple;
+  /*border: 4px solid purple;*/
   width: 200px;
   height: 160px;
   position: absolute;
+  background: url("http://res.cloudinary.com/dllnnnotc/image/upload/c_scale,h_160,w_360/v1470158269/exotic-wallpaper-supercars-marussia-cars-car-wallpapers_tgyecl.jpg");
 }
 .second {
   transform: rotateY(-60deg) translateX(180px);
   padding: 0 0 0 147px;
-  border: 4px solid purple;
+  /*border: 4px solid purple;*/
   width: 213px;
   height: 160px;
   position: absolute;
+  background: url("http://res.cloudinary.com/dllnnnotc/image/upload/c_scale,h_180,w_360/v1470158020/ferrari-supercars_00262085_ozjevr.jpg");
 
 }
 .third {
   transform: rotateY(-120deg) translateX(180px);
   padding: 0 0 0 120px;
-  border: 4px solid purple;
+  /*border: 4px solid purple;*/
   width: 240px;
   height: 160px;
   position: absolute;
+  background: url("http://res.cloudinary.com/dllnnnotc/image/upload/c_scale,h_180,w_360/v1470158107/super_2Bcar5_blvrov.jpg")
 
 }
 .fourth {
   transform: rotateY(-180deg) translateX(180px);
   padding: 0 0 0 147px;
-  border: 4px solid purple;
+  /*border: 4px solid purple;*/
   width: 210px;
   height: 160px;
   position: absolute;
+  background: url("http://res.cloudinary.com/dllnnnotc/image/upload/c_scale,h_180,w_360/v1470158693/Bugatti-Veyron-Supersport-Desktop_mqvfep.jpg");
 
 }
 .fifth {
   transform: rotateY(-240deg) translateX(180px);
   padding: 0 0 0 160px;
-  border: 4px solid purple;
+  /*border: 4px solid purple;*/
   width: 200px;
   height: 160px;
   position: absolute;
+  background: url("http://res.cloudinary.com/dllnnnotc/image/upload/c_scale,h_190,w_360/v1470020772/fxmi9arc7obbsmp4yzxo.jpg");
 
 }
 .sixth {
   transform: rotateY(-300deg) translateX(180px);
   padding: 0 0 0 160px;
-  border: 4px solid purple;
+  /*border: 4px solid purple;*/
   width: 200px;
   height: 160px;
   position: absolute;
+  background: url("http://res.cloudinary.com/dllnnnotc/image/upload/c_scale,h_180,w_360/v1470158400/99c38-supercar-mansory-mclaren-mp-c-s-hd-1313495_c9jdmy.jpg");
 }
 
 @keyframes rotation {from { transform: rotateY(0deg); } to {transform: rotateY(-360deg);}}
