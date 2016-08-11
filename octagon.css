@@ -1,7 +1,7 @@
 #octagon-container {
-  width: 80%;
+  width: 45%;
   height: 140px;
-  perspective: 1000px;
+  perspective: 2000px;
   position: relative;
   display: flex;
   justify-content: space-around;

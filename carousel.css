@@ -1,7 +1,7 @@
 #carousel-container {
-  padding-left: 320px;
+  padding-left: 15%;
   height: 160px;
-  perspective: 1300px;
+  perspective: 800px;
   width: 46%;
   display: flex;
   justify-content: center;
