@@ -17,7 +17,7 @@
 }
 
 #parent-octagon-div:hover {
-  animation: oct-rotate 30s linear infinite;
+  animation: oct-rotate 10s linear infinite;
   transform-origin: 110px 0 0;
 }
 
